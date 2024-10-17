@@ -1,0 +1,7 @@
+function onCondition() {
+    if (g_form.getValue('close_code') == '' || 
+        g_form.getValue('close_notes') == '' || 
+        g_form.getValue('resolved_by') == '') {
+        g_form.addInfoMessage("REMINDER: Populate the resolution information fields before saving an incident in a resolved or closed state.");
+    }
+}
